@@ -8,9 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
 	<title></title>
 	
+	<c:set var="contextName">${pageContext.request.contextPath}</c:set>
+	
+	<link href="${contextName}/css/common.css" rel="stylesheet" type="text/css">
+	
+	<script src="${contextName}/js/common.js"></script>
 	<script>
 		var contextPath = "${pageContext.request.contextPath}";
 	</script>
-	
-	<c:set var="contextName">${pageContext.request.contextPath}</c:set>
 </head>
